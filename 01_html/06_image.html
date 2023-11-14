@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | Image</title>
+</head>
+<body>
+    <h1>Image</h1>
+    <!--
+        src = 이미지 경로. 절대경로/상대경로를 모두 사용할 수 있음.
+        alt = 대체 텍스트. 이미지로드 실패 시 화면에 노출될 텍스트.
+              스크린 리더에 의해 해석/전달됨 
+        image태그는 inline 이다 
+    -->
+    <img src="../sample/image/flower1.PNG" 
+    alt="분홍색 벚꽃 이미지" 
+    style="width:  300px;">
+
+    <img src="https://image.kmib.co.kr/online_image/2021/0620/2021061813290340412_1623990543_0015964468.jpg" 
+    alt="댕댕이" 
+    style="width:  300px;">
+    
+    <h2>절대 | 상대 단위</h2>
+    <h3>px 절대단위</h3>
+    <div><img src="../sample/image/flower1.PNG" style="width: 100px;" alt=""></div>
+    <div><img src="../sample/image/flower2.PNG" style="width: 100px;" alt=""></div>
+    <div><img src="../sample/image/flower3.PNG" style="width: 100px;" alt=""></div>
+    <div><img src="../sample/image/flower4.PNG" style="width: 100px;" alt=""></div>
+    <div><img src="../sample/image/flower5.PNG" style="width: 100px;" alt=""></div>
+
+    <h3>% 상대단위(가변단위)</h3>
+    <!-- 부모태그 기준으로 상대크기를 결정-->
+    <div><img src="../sample/image/flower2.PNG" style="width: 18%;" alt="">
+    <img src="../sample/image/flower3.PNG" style="width: 18%;" alt="">
+    <img src="../sample/image/flower1.PNG" style="width: 18%;" alt="">
+    <img src="../sample/image/flower4.PNG" style="width: 18%;" alt="">
+    <img src="../sample/image/flower5.PNG" style="width: 18%;" alt=""></div>
+
+    <h2>정렬</h2>
+    <!-- div>img+p>lorem -->
+    <!-- inline 과 block 요소를 섞어쓰면 block을 기준으로 처리됨 
+        float - 정렬하는 방향을 정할 수 있음
+    -->
+    <div>
+        <img src="../sample/image/river1.PNG"
+        width="200px"
+        style="float: left; margin: 10px;" 
+        alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti praesentium velit minus earum, magnam ullam enim similique eveniet nobis facere ducimus architecto voluptas vitae labore, eius iure itaque odio.</p>
+    </div>
+    <div>
+        <img src="../sample/image/river1.PNG"
+        width="200px"
+        style="float: right; margin: 10px;" 
+        alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti praesentium velit minus earum, magnam ullam enim similique eveniet nobis facere ducimus architecto voluptas vitae labore, eius iure itaque odio.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ㅗ씌, initial-scale=1.0">
+    <title>HTML | Table</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        #resume {
+            width: 500px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Table</h1>
+    <!-- 
+        <table> 테이블 관련 최상위 태그
+        
+            <thead> 헤더행을 감싸는 태그
+            <tbody> 내용행을 감싸는 태그
+            <tfoot> 푸터행을 감싸는 태그
+
+                <tr> 행 태그 
+
+                    <th> 제목 셀태그
+                    <td> 내용 셀태그
+    -->
+
+    <!-- table>thead>tr>th*3 -->
+    <table>
+        <caption>웹 브라우저 표</caption>
+        <thead>
+            <tr>
+                <th>브라우저명</th>
+                <th>제조사</th>
+                <th>홈페이지</th>
+            </tr>
+        </thead>
+        <!-- tbody>(tr>td*3)*3 -->
+        <tbody>
+            <tr>
+                <td>Edge</td>
+                <td>MS</td>
+                <td><a href="https://microsoft.com">https://microsoft.com</a></td>
+            </tr>
+            <tr>
+                <td>Chrome</td>
+                <td>Google</td>
+                <td><a href="https://google.com">https://google.com</a></td>
+            </tr>
+            <tr>
+                <td>Safari</td>
+                <td>Apple</td>
+                <td><a href="https://apple.com">https://apple.com</a></td>
+            </tr>
+        </tbody>
+        <!-- tfoot>tr>th*2 -->
+        <tfoot>
+            <tr>
+                <th>총 개수</th>
+                <th colspan="2"> 3</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>행 | 열 확장 </h2>
+    <!-- 행 확장(세로) rowspan-->
+    <!-- 열 확장(가로) colspan-->
+
+    <table id="resume">
+        <thead>
+            <tr>
+                <th colspan="4">자기소개</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th=colspan="2" rowspan="2" style="width: 75px; height: 150px;">사진</th>
+                    <th style="width: 80px;">이름</th>
+                    <td></td>
+            </tr>
+            <tr>
+                <th>연락처</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th style="width: 70px;">주소</th>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <th style="height: 100px;">자기소개</th>
+                <td colspan="3"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+
+    <!-- 실습문제 : 환율 고시표 -->
+    <h2>실습문제 : 환율 고시표</h2>
+    <table id="exchangeRate">
+        <thead>
+            <tr style="height: 60px; background-color: khaki;">
+                <th rowspan="2">통화</th>
+                <th rowspan="2">매매<br/>기준율</th>
+                <th colspan="2">현찰매매율</th>
+                <th colspan="2">전신환매매율</th>
+                <th rowspan="2">T/C<br/>매도율</th>
+            </tr>
+            <tr style="background-color: khaki;">
+                <th>매도율</th>
+                <th>매입율</th>
+                <th>매도율</th>
+                <th>매입율</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="height: 100px;">
+                <th>미국(USD)</th>
+                <th>1,023.00</th>
+                <th>1,040.90</th>
+                <th>1,005,10</th>
+                <th>1,032.8</th>
+                <th>1,013,20</th>
+                <th>1,035.27</th>
+            </tr>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>
