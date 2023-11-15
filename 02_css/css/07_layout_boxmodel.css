@@ -1,0 +1,22 @@
+.item{
+    width: 300px;
+    height: 300px;
+    background-color: greenyellow;
+    border: 5px solid #000;
+    padding: 10px;
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    -> padding: 10px 10px 10px 10px; 위부터 시계방향으로 읽음
+    -> padding: 10px 10px -> top right 값을 읽어오며, 
+    bottom은 top, left는 right값을 참조함 */
+    margin: 2px;
+    /* margin은 부모요소 안에서 계산된다 */
+}
+.item span{
+    width: 150px; /* inline요소 적용안됨*/
+    height: 150px; /* inline요소 적용안됨*/
+    padding: 5px; 
+    margin: 50px 30px; /* inline요소 위아래 적용안됨*/
+}

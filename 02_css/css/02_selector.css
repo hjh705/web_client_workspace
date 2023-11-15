@@ -1,0 +1,125 @@
+/* 태그선택자*/
+/* ul{
+    background-color:blanchedalmond;
+} */
+/* 아이디선택자 */
+/* #foo1{
+    font-weight: bold;
+} */
+/* 클래스 선택자 */
+/* .group1{
+    color: blue;
+}
+.group2{
+    color: darkmagenta;
+}
+.group1.group2{
+    color: green;
+} */
+/* 속성 선택자 */
+/* [title]{
+    cursor: pointer;
+}
+[title=안녕2]{
+    text-decoration: underline; 
+}*/
+/* 혼용 */
+/* li#foo3.group2{
+    background-color:greenyellow;
+} */
+/* 복수개 */
+/* #foo4, #foo5{
+    color: dodgerblue;
+} */
+
+/* 자식선택자 - 자식만 선택 */
+/* #parent > h4 {
+    color: blueviolet;
+} */
+/* 후손선택자 - 부모자식 포함 */
+/* #parent h4{
+    color: blueviolet;
+}
+#parent > ul > li{
+    color: brown;
+}
+#parent #child li{
+    color: red;
+} */
+
+/* 형제선택자 */
+/* 다음 형제요소 하나 */
+#p1 + p {
+    color: springgreen;
+}
+/* 다음 형제요소 모두 */
+/* #p1 ~ p {
+    text-decoration: underline;
+} */
+/* 태그 구분 없이 모든 요소 선택 시 * 사용 */
+#p1 ~ * {
+    text-decoration: underline;
+}
+
+/* 가상클래스 선택자 */
+/* 특정 상황에 작동하는 선택자 */
+#bar1:active{
+    background-color: green;
+    color:purple;
+}
+#bar2:hover{
+    background-color: yellow;
+    color:blue;
+}
+
+/* 위치관련 가상클래스 선택자 */
+/* child 계열 (위치) */
+/* #season-wrapper :first-child{
+    color: springgreen;
+} */
+/* 제일 첫번째만 */
+/* #season-wrapper > :first-child{
+    color: springgreen;
+} */
+/* 타입 중 첫번째 */
+/* #season-wrapper p:first-child{
+    color: springgreen;
+} */
+/* 마지막 */
+/* #season-wrapper :last-child{
+    color: springgreen;
+} */
+/* n번째 */
+/* #season-wrapper :nth-child(3){
+    color: springgreen;
+} */
+/* #season-wrapper :nth-child(2n + 1){
+    color: springgreen;
+} */
+/* of-type 계열 (타입별로 위치) */
+/* #season-wrapper p:first-of-type{
+    color: springgreen;
+} */
+#season-wrapper p:last-of-type{
+    color: springgreen;
+}
+
+/* 부정선택자 */
+#client-langs li:not(#css3){
+    color: aquamarine;
+}
+
+/* 루트선택자 */
+:root{
+    background-color:antiquewhite;
+}
+
+/* 가상요소 선택 */
+/* ::before 시작태그와 내용 사이에 들어감 */
+#price-list li::before{
+    content:'￦'
+}
+/* ::after 종료태그와 내용 사이 */
+#price-list li::after{
+    content: '🍔';
+}

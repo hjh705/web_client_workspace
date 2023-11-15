@@ -1,0 +1,19 @@
+.block{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+}
+
+.color1{background-color: yellow;}
+.color2{background-color: red;}
+.color3{background-color: orangered;}
+.color4{background-color: plum;}
+.color5{background-color: blue;}
+
+.d-inline{ display:inline;}
+.d-block{display: block;}
+.d-inline-block{display: inline-block;}
+
+.d-none{display: none;}
+.v-hidden{visibility: hidden;}
+.opacity-0{opacity: 0;}

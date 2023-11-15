@@ -1,0 +1,31 @@
+.parent{
+    background-color: bisque;
+    text-align: center;
+}
+.parent span{
+    background-color: hotpink;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000; /*#rrggbb 속성간 값이 똑같으면 2개를 1개로 합칠 수 있음*/
+    /* center 위아래 좌우
+    margin: 0 auto; */
+    /* right*/
+    /* margin-left: auto;  */
+    /* left */
+    /* margin-right: auto; */
+}
+.item{
+    width: 250px;
+    height: 200px;
+    border: 5px solid greenyellow;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    /* text-align: center; */
+
+    /* 상하좌우 모두 고려한 가운데정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

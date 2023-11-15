@@ -1,0 +1,50 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+  /* import는 가장 위에 적어줘야만한다. */
+/* 폰트 종류 구분  */
+/* 
+serif 글자 끝에 삐침이 있음
+sans-serif 글자 끝에 삐침이 없음 
+cursive 필기체
+monospace 글자 간격이 모두 동일
+*/
+* {
+    font-size: 24px;
+}
+#font1{
+    /* 폰트나열, 왼쪽부터 존재하는지 검사 후 적용  
+    마지막 generic-family 작성 */
+    font-family:'Times New Roman', Times, serif;
+}
+#font2{
+    /* font-family: 'Nanum Gothic', sans-serif;
+    font-style:italic; */
+
+    /* 모아쓰기 shorthand */
+    /* font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; */
+    font: italic bold 48px/48px 'Nanum Gothic', sans-serif;
+}
+#font3{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+#parent{
+    font-size: 32px;
+}
+html{
+    font-size: 50px;
+}
+#parent :first-child{
+    font-size: 24px; /*절대크기*/
+}
+#parent :nth-child(2){
+    font-size: 150%; /*부모요소 상대크기*/
+}
+#parent :nth-child(3){
+    font-size: 1.5em; /*부모요소 상대크기*/
+}
+#parent :last-child{
+    font-size: 1.5rem; /*루트요소 상대크기*/
+}

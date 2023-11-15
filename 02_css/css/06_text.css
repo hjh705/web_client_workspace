@@ -1,0 +1,45 @@
+#sample{
+    /* block요소 하위 텍스트도 정렬 */
+    text-align: center;
+    text-decoration: underline 2px red wavy; /*underline | line-through | overline*/
+    text-shadow: 3px 3px 2px gray;/*x-offset y-offset spread color*/
+}
+/* 마우스 호버했을 때만 밑줄 생기도록 변경 */
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+   
+}
+
+.bg{
+    text-align: center;
+    background-color: black;
+    
+}
+.shadow{
+    font-size: 80px;
+    font-weight:bolder;
+    margin: 0;
+}
+
+#shadow1{
+    color: orangered;
+    text-shadow: 3px 3px 0px orange; 
+}
+#shadow2{
+    color: white;
+    text-shadow: 0px 1px 20px white;
+}
+#shadow3{
+    color: white;
+    text-shadow: 1px 1px 20px greenyellow;
+}
+#shadow4{
+    color: black;
+    text-shadow: 
+        0px -5px 12px yellow, 
+        0px -3px 5px rgb(255, 88, 10),
+        2px -15px 18px red;
+}
