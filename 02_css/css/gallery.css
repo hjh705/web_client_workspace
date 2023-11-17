@@ -1,0 +1,16 @@
+#gallery{
+    display:inline-block;
+    width: 800px;
+    height: 600px;
+    background-color: gray;
+    border: 10px solid black;
+    z-index: 10;
+    
+}
+
+.pic{
+    opacity: 0;
+}
+.small{
+   list-style-type: none;
+}
