@@ -106,6 +106,10 @@ function _querySelector() {
 
     const li = document.querySelector("li");
     console.log(li);
+
+    const g2 = document.querySelector(".group2");
+    console.log(g2);
+    g2.innerHTML = "지투";
 }
 
 /**

@@ -54,6 +54,8 @@ Truck.prototype.constructor = Truck;
  * - apply(this객체, [..params])
  * - call(this객체, ...params)
  * - bind(this객체)
+ * 
+ * 화살표 함수는 this를 재바인딩 할 수 없다 
  */
 const test3 = () => {
     const foo = function(a, b){
