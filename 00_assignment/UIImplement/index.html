@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI구현</title>
+    <style>
+        #id,#password,#pCheck,#email1,#email2,#address{
+            border-bottom: 2px;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            border-style: dashed; ;
+            float: right;
+        }
+    </style>
+</head>
+<body style="background-color: skyblue;">
+    <form action="">
+        <div >
+            <fieldset style="background-color: white; width: 500px; height: 450px; margin-left: 100px; margin-top: 50px;">
+                <br><br><br>
+                <label for="id" style="margin-left: 20px;">아이디</label><input type="text" name="id" id="id" style="width: 330px;" required>
+                <br><br>
+                <label for="password" style="margin-left: 20px;">패스워드</label><input type="text" name="password" id="password" style="width: 330px;" required>
+                <br><br>
+                <input type="text" name="notice" id="notice" placeholder="영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자" style="width: 300px; border: 0; margin-left: 163px;" readonly>
+                <br><br>
+                <label for="pCheck" style="margin-left: 20px;">패스워드 확인</label><input type="text" name="pCheck" id="pCheck" style="width: 330px;" required>
+                <br><br>
+                <span style="float: left;">
+                    <label for="email1" style="margin-left: 20px;">이메일</label>
+                    <input type="email" name="email1" id="email1" style="width: 120px; margin-left: 105px;" >
+                </span>
+                    <label for="email2">@</label>
+                    <input type="email" name="email2" id="email2" style="width: 191px;">
+                <br><br>
+                <label for="address" style="margin-left: 20px;">주소</label><input type="text" name="address" id="address" style="width: 330px;">
+                <br><br>
+                <input type="text" name="address" id="address" style="width: 330px;">
+                <br><br>
+                <br><br>
+                <button style="width:500px; height: 70px ;background-color: #b2ff77f3; font-size:larger; font-weight: bold;" >가 입</button>
+            </fieldset>
+        </div> 
+    </form>
+       
+    <script>
+        document.querySelector('#id').onblur = (e) => {
+            const{target : { value }} = e;
+            if(!value){
+            id.value = "필수 입력 항목입니다.";
+            }
+        }
+        document.querySelector('#password').onblur = (e) => {
+            const{target : { value }} = e;
+            if(!value){
+            password.value = "필수 입력 항목입니다.";
+            }
+        }
+        document.querySelector('#pCheck').onblur = (e) => {
+            const{target : { value }} = e;
+            if(!value){
+            pCheck.value = "필수 입력 항목입니다.";
+            }
+        }
+        document.querySelector('#password').onclick = (e) => {
+            alert("영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자")
+        }
+    </script>
+</body>
+</html>

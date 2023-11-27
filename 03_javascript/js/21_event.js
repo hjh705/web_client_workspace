@@ -48,7 +48,6 @@ document.querySelector('#btn4').onclick = function(e) {
 
 document.querySelector('#nickname').onfocus = (e) => {
     console.log('#nickname 포커싱되었습니다.');
-};
 document.querySelector('#nickname').onblur = (e) => {
     console.log('#nickname 포커스를 잃었습니다.');
     //입력값 유효성 검사
