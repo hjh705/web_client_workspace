@@ -132,7 +132,7 @@ document.guestbookFrm.onsubmit = (e) => {
 const saveGuestbook = () => {
 
     // localStorage에 저장
-    //guestbooks로 저장된 배열이 있다면 그걸 사용, 없다면 새 배열 생성
+    //guestbooks로 저장된 배열이 있다면 그걸 사용, 없다면 n새 배열 생성
     const guestbooks = JSON.parse(localStorage.getItem('guestbooks')) || []; // 앞의 것 결과가 undefined 일 시 우항을 대입
     guestbooks.push(new Guestbook(name.value, content.value))
     console.log(guestbooks);
@@ -142,7 +142,8 @@ const saveGuestbook = () => {
     // name.value = '';
     // content.value = '';
     frm.reset();
-    
+
+    renderGuestbooks();
 };
 
 class Guestbook {
